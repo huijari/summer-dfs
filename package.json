@@ -1,0 +1,16 @@
+{
+  "name": "tp0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tucker build",
+    "start": "tucker run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tucker": "^2.0.0"
+  }
+}
