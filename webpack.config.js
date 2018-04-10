@@ -14,8 +14,24 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['env', 'react']
+          presets: [
+            [
+              'env',
+              {
+                targets: { browsers: 'last 2 chrome versions' }
+              }
+            ],
+            'react'
+          ]
         }
+      },
+      {
+        test: /.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /.(woff|woff2|eot|ttf|otf|jpg)$/,
+        use: 'file-loader'
       }
     ]
   },
